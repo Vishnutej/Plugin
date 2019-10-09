@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Green-o-pedia",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.walmart.com/ip/*"
+      ],
+      "js": ["jquery-3.4.1.min.js","content.js"],
+      "web_accessible_resources": ["leaf.svg"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "greenLeaf_1.png"
+  }
+}
